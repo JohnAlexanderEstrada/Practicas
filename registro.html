@@ -1,0 +1,43 @@
+<?php
+include 'include/conecta.php';
+include 'include/validacion.php';
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="py-3">  </div>
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center display-6 mt-5">REGISTRO</h2>
+      <div class="col col-sm-10 col-md-10 col-lg-10 py-5">
+        <div class="card shadow bg-light">
+      <div class="container">
+    <div class="col col-lg-12">
+  <div class="card d-flex mt-3">
+<form action="validacion.php" method="post">
+    <div class="container">
+  <input type="text" name="Nom" placeholder="Ingresa tu Nombre" class="form-control mt-3" required>
+    <input type="text" name="AP" placeholder="Ingresa tu Apellido Paterno" class="form-control mt-3" required>
+      <input type="text" name="AM" placeholder="Ingresa tu Apellido Materno" class="form-control mt-3" required>
+        <input type="email" name="Ema" placeholder="Ingresa tu Correo" class="form-control mt-3" required>
+          <input type="text" name="User" placeholder="Ingresa tu Usuario" class="form-control mt-3" required>
+            <input type="password" name="Pass" placeholder="Ingresa tu Contraseña" class="form-control mt-3" required>
+<button class="btn btn-md btn-warning mt-3">Registrar</button>
+<div class="py-2">  </div>
+  </div>
+</form>
+</div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

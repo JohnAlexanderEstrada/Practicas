@@ -1,0 +1,59 @@
+<?php
+include 'include/conecta.php';
+include 'include/reg.php';
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="py-3">  </div>
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center display-6 mt-5">REGISTRO</h2>
+      <div class="col col-sm-10 col-md-10 col-lg-10 py-5">
+        <div class="card shadow bg-light">
+      <div class="container">
+    <div class="col col-lg-12">
+  <div class="card d-flex mt-3">
+<form action="" method="post">
+    <div class="container">
+  <input type="text" name="Nom" id="Nom" placeholder="Ingresa tu Nombre" class="form-control mt-3" required>
+    <input type="date" name="Edad" id="Edad" placeholder="Ingresa tu Edad" class="form-control mt-3" required>
+<div class="py-2">  </div>
+<textarea name="Dir" cols="138" id="Dir" placeholder="Ingresa tu Direccion"></textarea>
+      <input type="tel" name="Tel" id="Tel" placeholder="Ingresa tu Numero Telefonico" class="form-control mt-3" required>
+        <input type="email" name="Ema" id="Ema" placeholder="Ingresa tu Correo" class="form-control mt-3" required>
+<button onclick="validacion();" class="btn btn-md btn-info mt-3">Registrar</button>
+<div class="py-2">  </div>
+  </div>
+</form>
+</div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  function validacion(){
+    campo1 = document.getElementById('Nom').value;
+    campo2 = document.getElementById('Edad').value;
+    campo3 = document.getElementById('Dir').value;
+    campo4 = document.getElementById('Tel').value;
+    campo5 = document.getElementById('Ema').value;
+if (campo1 == "" || campo2 == "" || campo3 == "" || campo4 == "" || campo5 == "") {
+  alert("Ningun campo debe estar vacio");
+}
+else {
+return false;
+}
+}
+</script>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

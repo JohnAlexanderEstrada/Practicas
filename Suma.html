@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Suma de 2 numeros</title>
+  </head>
+  <body>
+    <div class="py-3">  </div>
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center display-6 mt-5">SUMA</h2>
+      <div class="col col-sm-10 col-md-10 col-lg-10 py-5">
+        <div class="card shadow bg-light">
+      <div class="container">
+          <div class="card d-flex mt-3">
+<form action="" method="post">
+  <input type="number" name="Num1" id="Num1" placeholder="Ingresa el primer valor" class="form-control mt-3">
+    <input type="number" name="Num2" id="Num2" placeholder="Ingresa el segundo valor" class="form-control mt-3">
+<button onclick="validar();" class="btn btn-md btn-dark mt-3">Realizar Operacion</button>
+<div class="py-2">  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function validar(){
+    num1 = Number(document.getElementById('Num1').value);
+    num2 = Number(document.getElementById('Num2').value);
+    res = num1+num2;
+    if (num1 == "") {
+      alert("Porfavor ingresa un valor");
+    }
+    else if (num2 == "") {
+      alert("Porfavor ingresa otro valor");
+    }
+    else {
+      alert("El resultado de la suma es: " + res);
+    }
+  }
+
+</script>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

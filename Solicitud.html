@@ -1,0 +1,60 @@
+<?php
+include 'include/conecta.php';
+include 'include/validacion1.php';
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Solicitud</title>
+  </head>
+  <body>
+    <div class="py-3">  </div>
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center display-6 mt-5">SOLICITUD</h2>
+      <div class="col col-sm-10 col-md-10 col-lg-10 py-5">
+        <div class="card shadow bg-light">
+      <div class="container">
+    <div class="col col-lg-12">
+  <div class="card d-flex mt-3">
+<form action="validacion1.php" method="post">
+    <div class="container">
+          <div class="py-1">  </div>
+<label for="">Ingresa la Duracion del Servicio</label>
+  <input type="time" name="Dur" placeholder="" class="form-control mt-2" required>
+  <div class="py-1">  </div>
+<label for="">Ingresa la Fecha de tu Solicitud</label>
+    <input type="date" name="Dia" placeholder="" class="form-control mt-2" required>
+  <div class="py-1">  </div>
+<label for="">Ingresa el Servicio que quieras solicitar</label>
+<select name="Servicio" name="Ser" class="form-control mt-2" required>
+<option value="Carpintero">Elije una opcion...</option>
+  <option value="Carpintero">Carpintero</option>
+  <option value="Pintor">Pintor</option>
+  <option value="Herrero">Herrero</option>
+</select>
+<div class="py-1">  </div>
+<label for="">Ingresa el Nombre</label>
+    <input type="text" name="Nom" placeholder="" class="form-control mt-2" required>
+  <div class="py-1">  </div>
+<label for="">Ingresa el Municipio</label>
+      <input type="text" name="Mun" placeholder="" class="form-control mt-2" required>
+  <div class="py-1">  </div>
+        <label for="">Ingresa el horario de tu Solicitud</label>
+        <input type="time" name="Hor" placeholder="" class="form-control mt-2" required>
+<button  class="btn btn-md btn-success mt-3">Registrar</button>
+<div class="py-2">  </div>
+  </div>
+</form>
+</div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
